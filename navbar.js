@@ -3,9 +3,19 @@ $(document).ready(function() {
     if($(this).attr("href") == undefined) {
       $(".sub.current").removeClass("current");
       $(".sub." + $(this).attr("next")).addClass("current");
-      console.log("NEXT");
     } else {
       location.href = $(this).attr("href");
     }
+  });
+  $(".amenu").click( function() {
+    if($(".sub").hasClass("current")) {
+      $(".sub").removeClass("current");
+    } else {
+      $(".sub.main").addClass("current");
+    }
+  });
+  $(".asearch").click( function() {
+    $(".sub").removeClass("current");
+    $(".subsearch").addClass("current");
   });
 });
