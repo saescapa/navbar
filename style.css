@@ -8,7 +8,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 320px; /* 100% */
+  width: 100%; /* 100% */
   height: 100%;
   border-bottom: 1px solid black;
 }
@@ -20,7 +20,7 @@ html, body {
 }
 
 .navbar .main {
-  width: 320px;
+  width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
